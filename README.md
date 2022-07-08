@@ -6,5 +6,5 @@ Packages are installed to use this environment, in order to learn basic methods 
 The RStudio Server can be run on a web browser, by using a GitPod environment.
 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DL-bioinformatics/transcriptomics)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DeepLearningItalia/Data-Science-e-Bioinformatics)
 
