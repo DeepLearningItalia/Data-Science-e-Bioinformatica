@@ -55,7 +55,7 @@ dev.off()
 ###################################
 
 
-gda <- read_tsv(gzfile("/home/rstudio/workspace/transcriptomics/reference/all_gene_disease_associations.tsv.gz"))
+gda <- read_tsv(gzfile("/home/rstudio/workspace/Data-Science-e-Bioinformatics/reference/all_gene_disease_associations.tsv.gz"))
 
 disease2gene=gda[, c("diseaseId", "geneId")]
 disease2name=gda[, c("diseaseId", "diseaseName")]

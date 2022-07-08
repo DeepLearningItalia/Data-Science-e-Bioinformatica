@@ -4,11 +4,11 @@ cd /home/rstudio
 
 ## the data are located in
 
-# /home/rstudio/workspace/transcriptomics/raw_data
+# /home/rstudio/workspace/Data-Science-e-Bioinformatics/raw_data
 
 
 ## the index for the transcriptome is located in
-## /home/rstudio/workspace/transcriptomics/reference/chr21_transcripts_index
+## /home/rstudio/workspace/Data-Science-e-Bioinformatics/reference/chr21_transcripts_index
 
 ## first we create a folder where to store quantifications
 
@@ -17,14 +17,14 @@ mkdir -p quantification
 ## we create a symbolic link to the raw data
 
 cd quantification
-ln -s /home/rstudio/workspace/transcriptomics/raw_data/*.gz .
+ln -s /home/rstudio/workspace/Data-Science-e-Bioinformatics/raw_data/*.gz .
 
 ## now we can quantify all samples, by running a loop with salmon and the following
 
 
 for sample in `ls *_1.fasta.gz`
 do
-index="/home/rstudio/workspace/transcriptomics/reference/chr21_transcripts_index"
+index="/home/rstudio/workspace/Data-Science-e-Bioinformatics/reference/chr21_transcripts_index"
 name=${sample%_1.fasta.gz}
 echo "quantifying $name"
 salmon quant \
